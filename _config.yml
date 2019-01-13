@@ -12,7 +12,7 @@ timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://jockey66666.github.io
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: category/:title/
@@ -74,6 +74,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: clean-blog
+# theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -81,3 +82,8 @@ deploy:
   type: git
   repo: https://github.com/jockey66666/jockey66666.github.io.git
   branch: master
+
+
+# Disqus
+# disqus_shortname: jockey66666
+  
