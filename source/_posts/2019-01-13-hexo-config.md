@@ -74,7 +74,7 @@ $ blog> hexo s
 ```
 
 ### 預覽
-> localhost:4000
+https://localhost:4000
 
 ### 發布
 
