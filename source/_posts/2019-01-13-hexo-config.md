@@ -2,6 +2,7 @@
 title: Hexo配置
 date: 2019-01-13 10:43:09
 tags: hexo
+categories: [github, hexo]
 ---
 
 ## 前言
@@ -12,6 +13,7 @@ tags: hexo
 * 安裝 git
 * [GitHub Pages](https://pages.github.com/)
 
+---
 
 ## Installation
 
@@ -28,6 +30,8 @@ $ blog> npm install
 ``` bash
 $ blog> npm install hexo-deployer-git --save
 ```
+
+---
 
 ## 設定 blog/_config.yml
 
@@ -64,9 +68,47 @@ deploy:
 theme: landscape # 更改成下載的主題名稱
 ```
 
+---
+
 ## 編輯與發佈
 
-### 啟動
+### 建立新文章
+``` base
+$ blog> hexo new "title"
+```
+
+### 編輯工具
+
+* vscode
+  * Markdown All in One
+  * GitLens
+
+### 建立分類和標籤索引頁面
+``` bash
+$ blog> hexo new page tags
+$ blog> hexo new page categories
+```
+
+``` yml
+# Directory
+tag_dir: tags 
+category_dir: categories
+#和上面建立的page名稱一致
+```
+
+### 編輯分類和標籤索引頁面
+
+categories/index.md中的front-matter加上
+```
+type: "categories"
+```
+
+categories/index.md中的front-matter加上
+```
+type: "tags"
+```
+
+### 啟動hexo
 ```bash
 $ blog> hexo clean
 $ blog> hexo g
@@ -95,10 +137,3 @@ $ blog > hexo d
 
 ### 範例
 https://github.com/jockey66666/blog
-
-
-## 編輯工具
-
-* vscode
-  * Markdown All in One
-  * GitLens
